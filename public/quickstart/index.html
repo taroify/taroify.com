@@ -64,7 +64,8 @@
 <p><a href="https://github.com/ant-design/babel-plugin-import" target="_blank" rel="nofollow noopener noreferrer">babel-plugin-import</a> 是一款 babel 插件，它会在编译过程中将 import 的写法自动转换为按需引入的方式。</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token comment"># 安装插件</span>
 <span class="token function">npm</span> i babel-plugin-import -D</code></pre></div>
-<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// babel.config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
   plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token punctuation">[</span>
       <span class="token string">"import"</span><span class="token punctuation">,</span>
