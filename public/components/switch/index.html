@@ -70,8 +70,19 @@
 <p>通过 <code class="language-text">size</code> 属性自定义开关的大小。</p>
 <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Switch</span></span> <span class="token attr-name">checked</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>24<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre></div>
 </div><div class="vant-docs-card"><h3 id="自定义颜色" style="position:relative;"><a href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A2%9C%E8%89%B2" aria-label="自定义颜色 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>自定义颜色</h3>
-<p><code class="language-text">activeColor</code> 属性表示打开时的背景色，<code class="language-text">inactiveColor</code> 表示关闭时的背景色。</p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Switch</span></span> <span class="token attr-name">checked</span> <span class="token attr-name">activeColor</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#ee0a24<span class="token punctuation">"</span></span> <span class="token attr-name">inactiveColor</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#dcdee0<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre></div>
+<p>通过 <code class="language-text">css</code> 设置打开与关闭时的背景色。</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Switch</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>custom-color<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span> <span class="token punctuation">/></span></span></code></pre></div>
+<div class="gatsby-highlight" data-language="scss"><pre class="language-scss"><code class="language-scss"><span class="token selector">.custom-color.taroify-switch </span><span class="token punctuation">{</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #dcdee0<span class="token punctuation">;</span>
+
+  <span class="token selector"><span class="token parent important">&amp;</span>--checked </span><span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #ee0a24<span class="token punctuation">;</span>
+
+    <span class="token selector">.taroify-switch__loading </span><span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> #ee0a24<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 </div><div class="vant-docs-card"><h3 id="搭配单元格使用" style="position:relative;"><a href="#%E6%90%AD%E9%85%8D%E5%8D%95%E5%85%83%E6%A0%BC%E4%BD%BF%E7%94%A8" aria-label="搭配单元格使用 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>搭配单元格使用</h3>
 <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">function</span> <span class="token function">SwitchWithCell</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> <span class="token punctuation">[</span>checked<span class="token punctuation">,</span> setChecked<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
@@ -118,18 +129,6 @@
 <td>开关尺寸，默认单位为<code class="language-text">px</code></td>
 <td><em>number | string</em></td>
 <td><code class="language-text">30px</code></td>
-</tr>
-<tr>
-<td>activeColor</td>
-<td>打开时的背景色</td>
-<td><em>string</em></td>
-<td><code class="language-text">#1989fa</code></td>
-</tr>
-<tr>
-<td>inactiveColor</td>
-<td>关闭时的背景色</td>
-<td><em>string</em></td>
-<td><code class="language-text">white</code></td>
 </tr>
 </tbody>
 </table>
