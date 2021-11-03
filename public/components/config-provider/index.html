@@ -70,6 +70,9 @@
 <span class="token selector">:root</span> <span class="token punctuation">{</span>
     <span class="token property">--button-primary-background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
+<blockquote>
+<p>注意：小程序不存在 <code class="language-text">:root</code> 元素，只能在 <code class="language-text">page</code> 根元素里覆盖 CSS 变量。</p>
+</blockquote>
 <h4 id="通过-configprovider-覆盖" style="position:relative;"><a href="#%E9%80%9A%E8%BF%87-configprovider-%E8%A6%86%E7%9B%96" aria-label="通过 configprovider 覆盖 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>通过 ConfigProvider 覆盖</h4>
 <p><code class="language-text">ConfigProvider</code> 组件提供了覆盖 CSS 变量的能力，你需要在根节点包裹一个 <code class="language-text">ConfigProvider</code> 组件，并通过 <code class="language-text">theme</code> 属性来配置一些主题变量。</p>
 <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">function</span> <span class="token function">CustomThemeVars</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -103,7 +106,7 @@
   <span class="token punctuation">)</span>
 <span class="token punctuation">}</span></code></pre></div>
 <blockquote>
-<p>注意：ConfigProvider 仅影响它的子组件的样式，不影响全局 root 节点。</p>
+<p>注意：ConfigProvider 仅影响它的子组件的样式，不影响全局 root 节点。在小程序中 ConfigProvider 不能放置在 <code class="language-text">app.ts</code> 文件里，因为 <code class="language-text">app.ts</code> 文件不能渲染任何内容。</p>
 </blockquote>
 </div><div class="vant-docs-card"><h3 id="基础变量" style="position:relative;"><a href="#%E5%9F%BA%E7%A1%80%E5%8F%98%E9%87%8F" aria-label="基础变量 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>基础变量</h3>
 <p>Taroify 中的 CSS 变量分为 <strong>基础变量</strong> 和 <strong>组件变量</strong>。组件变量会继承基础变量，因此在修改基础变量后，会影响所有相关的组件。</p>

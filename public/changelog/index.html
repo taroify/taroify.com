@@ -58,14 +58,64 @@
 <li>主版本号：发布时间不定，包含不兼容更新。</li>
 </ul>
 </div><h2 id="更新内容" style="position:relative;"><a href="#%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9" aria-label="更新内容 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>更新内容</h2>
-<div class="vant-docs-card"><h3 id="v0016-alpha3" style="position:relative;"><a href="#v0016-alpha3" aria-label="v0016 alpha3 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.16-alpha.3</h3>
+<div class="vant-docs-card"><h3 id="v0017-alpha0" style="position:relative;"><a href="#v0017-alpha0" aria-label="v0017 alpha0 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.17-alpha.0</h3>
+<p><code class="language-text">2021-11-03</code></p>
+<p><strong>Feature</strong></p>
+<ul>
+<li>
+<p>Search</p>
+<ul>
+<li>新增 focus 属性 <a href="https://github.com/mallfoundry/taroify/issues/73" target="_blank" rel="nofollow noopener noreferrer">#73</a></li>
+</ul>
+</li>
+<li>
+<p>Toast</p>
+<ul>
+<li>新增命令式调用 <code class="language-text">Toast.open()</code>、<code class="language-text">Toast.loading()</code>、<code class="language-text">Toast.success()</code>、<code class="language-text">Toast.fail()</code> 方法 <a href="https://github.com/mallfoundry/taroify/issues/71" target="_blank" rel="nofollow noopener noreferrer">#71</a> <a href="https://github.com/mallfoundry/taroify/issues/69" target="_blank" rel="nofollow noopener noreferrer">#69</a></li>
+</ul>
+</li>
+<li>
+<p>Notify</p>
+<ul>
+<li>新增命令式调用 <code class="language-text">Notify.open()</code> 方法 <a href="https://github.com/mallfoundry/taroify/issues/71" target="_blank" rel="nofollow noopener noreferrer">#71</a> <a href="https://github.com/mallfoundry/taroify/issues/69" target="_blank" rel="nofollow noopener noreferrer">#69</a></li>
+</ul>
+</li>
+<li>
+<p>Dialog</p>
+<ul>
+<li>新增命令式调用 <code class="language-text">Dialog.open()</code>、<code class="language-text">Dialog.alert()</code>、<code class="language-text">Dialog.confirm()</code> 方法 <a href="https://github.com/mallfoundry/taroify/issues/71" target="_blank" rel="nofollow noopener noreferrer">#71</a> <a href="https://github.com/mallfoundry/taroify/issues/69" target="_blank" rel="nofollow noopener noreferrer">#69</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>
+<p>DatetimePicker</p>
+<ul>
+<li>修复在改变 value 导致缺少 columns 的问题 <a href="https://github.com/mallfoundry/taroify/issues/75" target="_blank" rel="nofollow noopener noreferrer">#75</a></li>
+</ul>
+</li>
+<li>
+<p>Popup</p>
+<ul>
+<li>修复在编译打包后因背景板（Backdrop）叠加显示在依赖 Popup 组件之上的问题 <a href="https://github.com/mallfoundry/taroify/issues/72" target="_blank" rel="nofollow noopener noreferrer">#72</a></li>
+</ul>
+</li>
+<li>
+<p>Search</p>
+<ul>
+<li>修复设置 autoFocus 属性无效的问题 <a href="https://github.com/mallfoundry/taroify/issues/73" target="_blank" rel="nofollow noopener noreferrer">#73</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="vant-docs-card"><h3 id="v0016-alpha3" style="position:relative;"><a href="#v0016-alpha3" aria-label="v0016 alpha3 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.16-alpha.3</h3>
 <p><code class="language-text">2021-11-01</code></p>
 <p><strong>Bug Fixes</strong></p>
 <ul>
 <li>
 <p>List</p>
 <ul>
-<li>修复因 children 改变未触发 onLoad 事件的问题<a href="https://github.com/mallfoundry/taroify/issues/70" target="_blank" rel="nofollow noopener noreferrer">#70</a></li>
+<li>修复因 children 改变未触发 onLoad 事件的问题 <a href="https://github.com/mallfoundry/taroify/issues/70" target="_blank" rel="nofollow noopener noreferrer">#70</a></li>
 </ul>
 </li>
 </ul>
@@ -76,7 +126,7 @@
 <li>
 <p>Sticky</p>
 <ul>
-<li>修复因 offsetTop, offsetBottom 未显示解构而导致的设置属性错误的问题<a href="https://github.com/mallfoundry/taroify/issues/68" target="_blank" rel="nofollow noopener noreferrer">#68</a></li>
+<li>修复因 offsetTop, offsetBottom 未显示解构而导致的设置属性错误的问题 <a href="https://github.com/mallfoundry/taroify/issues/68" target="_blank" rel="nofollow noopener noreferrer">#68</a></li>
 </ul>
 </li>
 </ul>
@@ -84,19 +134,19 @@
 <p><code class="language-text">2021-11-01</code></p>
 <p><strong>Bug Fixes</strong></p>
 <ul>
-<li>修复<code class="language-text">@taroify/icons</code>样式问题<a href="https://github.com/mallfoundry/taroify/issues/67" target="_blank" rel="nofollow noopener noreferrer">#67</a></li>
+<li>修复<code class="language-text">@taroify/icons</code>样式问题 <a href="https://github.com/mallfoundry/taroify/issues/67" target="_blank" rel="nofollow noopener noreferrer">#67</a></li>
 </ul>
 </div><div class="vant-docs-card"><h3 id="v0016-alpha0" style="position:relative;"><a href="#v0016-alpha0" aria-label="v0016 alpha0 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.16-alpha.0</h3>
 <p><code class="language-text">2021-10-31</code></p>
 <p><strong>New Component</strong></p>
 <ul>
-<li>新增 Calendar 组件<a href="https://github.com/mallfoundry/taroify/issues/66" target="_blank" rel="nofollow noopener noreferrer">#66</a></li>
+<li>新增 Calendar 组件 <a href="https://github.com/mallfoundry/taroify/issues/66" target="_blank" rel="nofollow noopener noreferrer">#66</a></li>
 </ul>
 <p><strong>Feature</strong></p>
 <ul>
-<li>提供完全属性集，为所有组件的属性继承自 StandardProps 接口<a href="https://github.com/mallfoundry/taroify/issues/65" target="_blank" rel="nofollow noopener noreferrer">#65</a></li>
-<li>使用 useMounted 代替 useReady 钩子<a href="https://github.com/mallfoundry/taroify/issues/62" target="_blank" rel="nofollow noopener noreferrer">#62</a></li>
-<li>@taroify/icons 增强自动导入图标样式<a href="https://github.com/mallfoundry/taroify/issues/63" target="_blank" rel="nofollow noopener noreferrer">#63</a></li>
+<li>提供完全属性集，为所有组件的属性继承自 StandardProps 接口 <a href="https://github.com/mallfoundry/taroify/issues/65" target="_blank" rel="nofollow noopener noreferrer">#65</a></li>
+<li>使用 useMounted 代替 useReady 钩子 <a href="https://github.com/mallfoundry/taroify/issues/62" target="_blank" rel="nofollow noopener noreferrer">#62</a></li>
+<li>@taroify/icons 增强自动导入图标样式 <a href="https://github.com/mallfoundry/taroify/issues/63" target="_blank" rel="nofollow noopener noreferrer">#63</a></li>
 </ul>
 </div><div class="vant-docs-card"><h3 id="v0015-alpha12" style="position:relative;"><a href="#v0015-alpha12" aria-label="v0015 alpha12 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.15-alpha.12</h3>
 <p><code class="language-text">2021-10-26</code></p>
@@ -105,7 +155,7 @@
 <li>
 <p>Cell.Group</p>
 <ul>
-<li>title 属性的类型调整为 ReactNode<a href="https://github.com/mallfoundry/taroify/issues/60" target="_blank" rel="nofollow noopener noreferrer">#60</a></li>
+<li>title 属性的类型调整为 ReactNode <a href="https://github.com/mallfoundry/taroify/issues/60" target="_blank" rel="nofollow noopener noreferrer">#60</a></li>
 </ul>
 </li>
 </ul>
@@ -116,7 +166,7 @@
 <li>
 <p>Popup</p>
 <ul>
-<li>修复导入<code class="language-text">@taroify/~icons</code>的问题<a href="https://github.com/mallfoundry/taroify/issues/59" target="_blank" rel="nofollow noopener noreferrer">#59</a></li>
+<li>修复导入<code class="language-text">@taroify/~icons</code>的问题 <a href="https://github.com/mallfoundry/taroify/issues/59" target="_blank" rel="nofollow noopener noreferrer">#59</a></li>
 </ul>
 </li>
 </ul>
@@ -127,7 +177,7 @@
 <li>
 <p>Tabs</p>
 <ul>
-<li>新增 TabsSticky 属性，用以设置 Tabs.sticky 属性<a href="https://github.com/mallfoundry/taroify/issues/58" target="_blank" rel="nofollow noopener noreferrer">#58</a></li>
+<li>新增 TabsSticky 属性，用以设置 Tabs.sticky 属性 <a href="https://github.com/mallfoundry/taroify/issues/58" target="_blank" rel="nofollow noopener noreferrer">#58</a></li>
 </ul>
 </li>
 </ul>
@@ -136,7 +186,7 @@
 <li>
 <p>Sticky</p>
 <ul>
-<li>使用 offsetTop, offsetBottom 属性代替 { top, bottom } 属性<a href="https://github.com/mallfoundry/taroify/issues/57" target="_blank" rel="nofollow noopener noreferrer">#57</a></li>
+<li>使用 offsetTop, offsetBottom 属性代替 { top, bottom } 属性 <a href="https://github.com/mallfoundry/taroify/issues/57" target="_blank" rel="nofollow noopener noreferrer">#57</a></li>
 </ul>
 </li>
 </ul>
@@ -147,7 +197,7 @@
 <li>
 <p>Button</p>
 <ul>
-<li>修复文本按钮存在边框的问题<a href="https://github.com/mallfoundry/taroify/issues/55" target="_blank" rel="nofollow noopener noreferrer">#55</a></li>
+<li>修复文本按钮存在边框的问题 <a href="https://github.com/mallfoundry/taroify/issues/55" target="_blank" rel="nofollow noopener noreferrer">#55</a></li>
 </ul>
 </li>
 </ul>
@@ -156,7 +206,7 @@
 <li>
 <p>Button</p>
 <ul>
-<li>删除 color 自定义属性，使用 CSS className 和 style 代替 color 属性<a href="https://github.com/mallfoundry/taroify/issues/56" target="_blank" rel="nofollow noopener noreferrer">#56</a></li>
+<li>删除 color 自定义属性，使用 CSS className 和 style 代替 color 属性 <a href="https://github.com/mallfoundry/taroify/issues/56" target="_blank" rel="nofollow noopener noreferrer">#56</a></li>
 </ul>
 </li>
 </ul>
@@ -167,13 +217,13 @@
 <li>
 <p>Sticky</p>
 <ul>
-<li>新增 onScroll 事件<a href="https://github.com/mallfoundry/taroify/issues/51" target="_blank" rel="nofollow noopener noreferrer">#51</a></li>
+<li>新增 onScroll 事件 <a href="https://github.com/mallfoundry/taroify/issues/51" target="_blank" rel="nofollow noopener noreferrer">#51</a></li>
 </ul>
 </li>
 <li>
 <p>Image</p>
 <ul>
-<li>新增 onClick 事件<a href="https://github.com/mallfoundry/taroify/issues/54" target="_blank" rel="nofollow noopener noreferrer">#54</a></li>
+<li>新增 onClick 事件 <a href="https://github.com/mallfoundry/taroify/issues/54" target="_blank" rel="nofollow noopener noreferrer">#54</a></li>
 </ul>
 </li>
 </ul>
@@ -182,13 +232,13 @@
 <li>
 <p>Tabs</p>
 <ul>
-<li>修复设置 sticky 无法切换 Tab 的问题<a href="https://github.com/mallfoundry/taroify/issues/52" target="_blank" rel="nofollow noopener noreferrer">#52</a></li>
+<li>修复设置 sticky 无法切换 Tab 的问题 <a href="https://github.com/mallfoundry/taroify/issues/52" target="_blank" rel="nofollow noopener noreferrer">#52</a></li>
 </ul>
 </li>
 <li>
 <p>Styles</p>
 <ul>
-<li>修复 tap-highlight-color 默认为淡蓝的问题<a href="https://github.com/mallfoundry/taroify/issues/53" target="_blank" rel="nofollow noopener noreferrer">#54</a></li>
+<li>修复 tap-highlight-color 默认为淡蓝的问题 <a href="https://github.com/mallfoundry/taroify/issues/53" target="_blank" rel="nofollow noopener noreferrer">#54</a></li>
 </ul>
 </li>
 </ul>
@@ -196,7 +246,7 @@
 <p><code class="language-text">2021-10-22</code></p>
 <p><strong>Feature</strong></p>
 <ul>
-<li>使用 esm 作为默认打包方式<a href="https://github.com/mallfoundry/taroify/issues/50" target="_blank" rel="nofollow noopener noreferrer">#50</a></li>
+<li>使用 esm 作为默认打包方式 <a href="https://github.com/mallfoundry/taroify/issues/50" target="_blank" rel="nofollow noopener noreferrer">#50</a></li>
 </ul>
 </div><div class="vant-docs-card"><h3 id="v0015-alpha6" style="position:relative;"><a href="#v0015-alpha6" aria-label="v0015 alpha6 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.15-alpha.6</h3>
 <p><code class="language-text">2021-10-22</code></p>
@@ -205,7 +255,7 @@
 <li>
 <p>Toast</p>
 <ul>
-<li>新增 position 属性<a href="https://github.com/mallfoundry/taroify/issues/49" target="_blank" rel="nofollow noopener noreferrer">#49</a></li>
+<li>新增 position 属性 <a href="https://github.com/mallfoundry/taroify/issues/49" target="_blank" rel="nofollow noopener noreferrer">#49</a></li>
 </ul>
 </li>
 </ul>
@@ -216,7 +266,7 @@
 <li>
 <p>Transition</p>
 <ul>
-<li>修复 DOM 在 enter 之前已挂载的问题<a href="https://github.com/mallfoundry/taroify/issues/48" target="_blank" rel="nofollow noopener noreferrer">#48</a></li>
+<li>修复 DOM 在 enter 之前已挂载的问题 <a href="https://github.com/mallfoundry/taroify/issues/48" target="_blank" rel="nofollow noopener noreferrer">#48</a></li>
 </ul>
 </li>
 </ul>
@@ -227,7 +277,7 @@
 <li>
 <p>Tag</p>
 <ul>
-<li>新增 onClick 事件<a href="https://github.com/mallfoundry/taroify/issues/46" target="_blank" rel="nofollow noopener noreferrer">#46</a></li>
+<li>新增 onClick 事件 <a href="https://github.com/mallfoundry/taroify/issues/46" target="_blank" rel="nofollow noopener noreferrer">#46</a></li>
 </ul>
 </li>
 </ul>
@@ -236,7 +286,7 @@
 <li>
 <p>Tag</p>
 <ul>
-<li>删除 textColor 属性，使用 CSS className 和 style 代替 textColor 属性<a href="https://github.com/mallfoundry/taroify/issues/47" target="_blank" rel="nofollow noopener noreferrer">#47</a></li>
+<li>删除 textColor 属性，使用 CSS className 和 style 代替 textColor 属性 <a href="https://github.com/mallfoundry/taroify/issues/47" target="_blank" rel="nofollow noopener noreferrer">#47</a></li>
 </ul>
 </li>
 </ul>
@@ -247,7 +297,7 @@
 <li>
 <p>Uploader.Image</p>
 <ul>
-<li>新增 mode, alt, round 属性<a href="https://github.com/mallfoundry/taroify/issues/45" target="_blank" rel="nofollow noopener noreferrer">#45</a></li>
+<li>新增 mode, alt, round 属性 <a href="https://github.com/mallfoundry/taroify/issues/45" target="_blank" rel="nofollow noopener noreferrer">#45</a></li>
 </ul>
 </li>
 </ul>
@@ -258,7 +308,7 @@
 <li>
 <p>Transition</p>
 <ul>
-<li>修复因设置 unmountOnExit 属性，而导致小程序渲染错乱的问题<a href="https://github.com/mallfoundry/taroify/issues/42" target="_blank" rel="nofollow noopener noreferrer">#42</a></li>
+<li>修复因设置 unmountOnExit 属性，而导致小程序渲染错乱的问题 <a href="https://github.com/mallfoundry/taroify/issues/42" target="_blank" rel="nofollow noopener noreferrer">#42</a></li>
 </ul>
 </li>
 </ul>
@@ -269,7 +319,7 @@
 <li>
 <p>Tabs</p>
 <ul>
-<li>新增 bottomBar 的 css 变量<a href="https://github.com/mallfoundry/taroify/issues/40" target="_blank" rel="nofollow noopener noreferrer">#40</a></li>
+<li>新增 bottomBar 的 css 变量 <a href="https://github.com/mallfoundry/taroify/issues/40" target="_blank" rel="nofollow noopener noreferrer">#40</a></li>
 </ul>
 </li>
 </ul>
@@ -277,7 +327,7 @@
 <p><code class="language-text">2021-10-16</code></p>
 <p><strong>New Component</strong></p>
 <ul>
-<li>新增 ConfigProvider 组件<a href="https://github.com/mallfoundry/taroify/issues/39" target="_blank" rel="nofollow noopener noreferrer">#39</a></li>
+<li>新增 ConfigProvider 组件 <a href="https://github.com/mallfoundry/taroify/issues/39" target="_blank" rel="nofollow noopener noreferrer">#39</a></li>
 </ul>
 </div><div class="vant-docs-card"><h3 id="v0014-alpha2" style="position:relative;"><a href="#v0014-alpha2" aria-label="v0014 alpha2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.14-alpha.2</h3>
 <p><code class="language-text">2021-10-13</code></p>
@@ -286,7 +336,7 @@
 <li>
 <p>SwipeCell</p>
 <ul>
-<li>修复动画卡顿和 rightRect 为空的问题<a href="https://github.com/mallfoundry/taroify/issues/37" target="_blank" rel="nofollow noopener noreferrer">#37</a></li>
+<li>修复动画卡顿和 rightRect 为空的问题 <a href="https://github.com/mallfoundry/taroify/issues/37" target="_blank" rel="nofollow noopener noreferrer">#37</a></li>
 </ul>
 </li>
 </ul>
@@ -297,7 +347,7 @@
 <li>
 <p>Tabbar</p>
 <ul>
-<li>修复图标为空时，Badge 组件未清理的问题<a href="https://github.com/mallfoundry/taroify/issues/35" target="_blank" rel="nofollow noopener noreferrer">#35</a></li>
+<li>修复图标为空时，Badge 组件未清理的问题 <a href="https://github.com/mallfoundry/taroify/issues/35" target="_blank" rel="nofollow noopener noreferrer">#35</a></li>
 </ul>
 </li>
 </ul>
@@ -308,26 +358,26 @@
 <li>
 <p>DropdownMenu</p>
 <ul>
-<li>activeKey 属性重命名为 value<a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
+<li>activeKey 属性重命名为 value <a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
 </ul>
 </li>
 <li>
 <p>Collapse</p>
 <ul>
-<li>activeKey 属性重命名为 value<a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
+<li>activeKey 属性重命名为 value <a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
 </ul>
 </li>
 <li>
 <p>Sidebar</p>
 <ul>
-<li>activeKey 属性重命名为 value<a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
+<li>activeKey 属性重命名为 value <a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
 </ul>
 </li>
 <li>
 <p>TreeSelect</p>
 <ul>
-<li>activeTab 属性重命名为 tabValue<a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
-<li>activeValue 属性重命名为 value<a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
+<li>activeTab 属性重命名为 tabValue <a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
+<li>activeValue 属性重命名为 value <a href="https://github.com/mallfoundry/taroify/issues/34" target="_blank" rel="nofollow noopener noreferrer">#34</a></li>
 </ul>
 </li>
 </ul>
@@ -335,8 +385,8 @@
 <p><code class="language-text">2021-10-09</code></p>
 <p><strong>Feature</strong></p>
 <ul>
-<li>完善 css var 自定义主题<a href="https://github.com/mallfoundry/taroify/issues/23" target="_blank" rel="nofollow noopener noreferrer">#23</a></li>
-<li>新增所有的 vant 图标<a href="https://github.com/mallfoundry/taroify/issues/30" target="_blank" rel="nofollow noopener noreferrer">#30</a></li>
+<li>完善 css var 自定义主题 <a href="https://github.com/mallfoundry/taroify/issues/23" target="_blank" rel="nofollow noopener noreferrer">#23</a></li>
+<li>新增所有的 vant 图标 <a href="https://github.com/mallfoundry/taroify/issues/30" target="_blank" rel="nofollow noopener noreferrer">#30</a></li>
 </ul>
 </div><div class="vant-docs-card"><h3 id="v0012-alpha18" style="position:relative;"><a href="#v0012-alpha18" aria-label="v0012 alpha18 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.12-alpha.18</h3>
 <p><code class="language-text">2021-09-30</code></p>
@@ -345,7 +395,7 @@
 <li>
 <p>Button</p>
 <ul>
-<li>修复细边框样式模糊问题<a href="https://github.com/mallfoundry/taroify/issues/29" target="_blank" rel="nofollow noopener noreferrer">#29</a></li>
+<li>修复细边框样式模糊问题 <a href="https://github.com/mallfoundry/taroify/issues/29" target="_blank" rel="nofollow noopener noreferrer">#29</a></li>
 </ul>
 </li>
 </ul>
@@ -356,7 +406,7 @@
 <li>
 <p>Tabs</p>
 <ul>
-<li>修复滑动切换时 Tab 没有效果的问题<a href="https://github.com/mallfoundry/taroify/issues/28" target="_blank" rel="nofollow noopener noreferrer">#28</a></li>
+<li>修复滑动切换时 Tab 没有效果的问题 <a href="https://github.com/mallfoundry/taroify/issues/28" target="_blank" rel="nofollow noopener noreferrer">#28</a></li>
 </ul>
 </li>
 </ul>
@@ -367,7 +417,7 @@
 <li>
 <p>Tabs.TabPane</p>
 <ul>
-<li>新增 value 属性<a href="https://github.com/mallfoundry/taroify/issues/26" target="_blank" rel="nofollow noopener noreferrer">#26</a></li>
+<li>新增 value 属性 <a href="https://github.com/mallfoundry/taroify/issues/26" target="_blank" rel="nofollow noopener noreferrer">#26</a></li>
 </ul>
 </li>
 </ul>
@@ -376,7 +426,7 @@
 <li>
 <p>Button</p>
 <ul>
-<li>修复 disabled 为 true 时，依然可以点击的问题<a href="https://github.com/mallfoundry/taroify/issues/27" target="_blank" rel="nofollow noopener noreferrer">#27</a></li>
+<li>修复 disabled 为 true 时，依然可以点击的问题 <a href="https://github.com/mallfoundry/taroify/issues/27" target="_blank" rel="nofollow noopener noreferrer">#27</a></li>
 </ul>
 </li>
 </ul>
@@ -385,7 +435,7 @@
 <li>
 <p>Tabs</p>
 <ul>
-<li>activeKey 属性重命名为 value<a href="https://github.com/mallfoundry/taroify/issues/26" target="_blank" rel="nofollow noopener noreferrer">#26</a></li>
+<li>activeKey 属性重命名为 value <a href="https://github.com/mallfoundry/taroify/issues/26" target="_blank" rel="nofollow noopener noreferrer">#26</a></li>
 </ul>
 </li>
 </ul>
@@ -396,7 +446,7 @@
 <li>
 <p>Tabs</p>
 <ul>
-<li>修复在微信小程序获得 navRect 为空的问题<a href="https://github.com/mallfoundry/taroify/pull/19" target="_blank" rel="nofollow noopener noreferrer">#19</a></li>
+<li>修复在微信小程序获得 navRect 为空的问题 <a href="https://github.com/mallfoundry/taroify/pull/19" target="_blank" rel="nofollow noopener noreferrer">#19</a></li>
 </ul>
 </li>
 </ul>
@@ -407,7 +457,7 @@
 <li>
 <p>@taroify/icons</p>
 <ul>
-<li>在使用 @taroify/core 组件时，自动导入图标样式<a href="https://github.com/mallfoundry/taroify/issues/24" target="_blank" rel="nofollow noopener noreferrer">#24</a></li>
+<li>在使用 @taroify/core 组件时，自动导入图标样式 <a href="https://github.com/mallfoundry/taroify/issues/24" target="_blank" rel="nofollow noopener noreferrer">#24</a></li>
 </ul>
 </li>
 </ul>
@@ -418,7 +468,7 @@
 <li>
 <p>NoticeBar</p>
 <ul>
-<li>修复动态渲染时，useReady 不执行的问题<a href="https://github.com/mallfoundry/taroify/pull/20" target="_blank" rel="nofollow noopener noreferrer">#20</a></li>
+<li>修复动态渲染时，useReady 不执行的问题 <a href="https://github.com/mallfoundry/taroify/pull/20" target="_blank" rel="nofollow noopener noreferrer">#20</a></li>
 </ul>
 </li>
 </ul>
@@ -429,13 +479,13 @@
 <li>
 <p>Sheet</p>
 <ul>
-<li>修复按需导入样式的问题<a href="https://github.com/mallfoundry/taroify/issues/18" target="_blank" rel="nofollow noopener noreferrer">#18</a></li>
+<li>修复按需导入样式的问题 <a href="https://github.com/mallfoundry/taroify/issues/18" target="_blank" rel="nofollow noopener noreferrer">#18</a></li>
 </ul>
 </li>
 <li>
 <p>Tabs</p>
 <ul>
-<li>修复 navOffset 为 null 导致报错的问题<a href="https://github.com/mallfoundry/taroify/pull/17" target="_blank" rel="nofollow noopener noreferrer">#17</a></li>
+<li>修复 navOffset 为 null 导致报错的问题 <a href="https://github.com/mallfoundry/taroify/pull/17" target="_blank" rel="nofollow noopener noreferrer">#17</a></li>
 </ul>
 </li>
 </ul>
@@ -446,7 +496,7 @@
 <li>
 <p>Divider</p>
 <ul>
-<li>修复 className 放置错误问题<a href="https://github.com/mallfoundry/taroify/pull/16" target="_blank" rel="nofollow noopener noreferrer">#16</a></li>
+<li>修复 className 放置错误问题 <a href="https://github.com/mallfoundry/taroify/pull/16" target="_blank" rel="nofollow noopener noreferrer">#16</a></li>
 </ul>
 </li>
 </ul>
@@ -454,7 +504,7 @@
 <p><code class="language-text">2021-09-22</code></p>
 <p><strong>Feature</strong></p>
 <ul>
-<li>所有组件新增 className 属性<a href="https://github.com/mallfoundry/taroify/issues/15" target="_blank" rel="nofollow noopener noreferrer">#15</a></li>
+<li>所有组件新增 className 属性 <a href="https://github.com/mallfoundry/taroify/issues/15" target="_blank" rel="nofollow noopener noreferrer">#15</a></li>
 </ul>
 </div><div class="vant-docs-card"><h3 id="v0012-alpha9" style="position:relative;"><a href="#v0012-alpha9" aria-label="v0012 alpha9 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.12-alpha.9</h3>
 <p><code class="language-text">2021-09-22</code></p>
@@ -465,7 +515,7 @@
 <li>
 <p>Field</p>
 <ul>
-<li>新增 name 属性<a href="https://github.com/mallfoundry/taroify/issues/11" target="_blank" rel="nofollow noopener noreferrer">#11</a></li>
+<li>新增 name 属性 <a href="https://github.com/mallfoundry/taroify/issues/11" target="_blank" rel="nofollow noopener noreferrer">#11</a></li>
 </ul>
 </li>
 </ul>
@@ -474,13 +524,13 @@
 <li>
 <p>Import on demand</p>
 <ul>
-<li>修复重复导入样式的问题<a href="https://github.com/mallfoundry/taroify/issues/13" target="_blank" rel="nofollow noopener noreferrer">#13</a></li>
+<li>修复重复导入样式的问题 <a href="https://github.com/mallfoundry/taroify/issues/13" target="_blank" rel="nofollow noopener noreferrer">#13</a></li>
 </ul>
 </li>
 <li>
 <p>NoticeBar</p>
 <ul>
-<li>修复 NoticeBar 全局样式引入问题<a href="https://github.com/mallfoundry/taroify/issues/14" target="_blank" rel="nofollow noopener noreferrer">#14</a></li>
+<li>修复 NoticeBar 全局样式引入问题 <a href="https://github.com/mallfoundry/taroify/issues/14" target="_blank" rel="nofollow noopener noreferrer">#14</a></li>
 </ul>
 </li>
 </ul>
@@ -493,7 +543,7 @@
 <li>
 <p>NumberKeyboard</p>
 <ul>
-<li>修复 classNames 导入方式不正确的问题<a href="https://github.com/mallfoundry/taroify/issues/10" target="_blank" rel="nofollow noopener noreferrer">#10</a></li>
+<li>修复 classNames 导入方式不正确的问题 <a href="https://github.com/mallfoundry/taroify/issues/10" target="_blank" rel="nofollow noopener noreferrer">#10</a></li>
 </ul>
 </li>
 </ul>
@@ -504,13 +554,13 @@
 <li>
 <p>Navbar</p>
 <ul>
-<li>title 提升为 ReactNode 类型<a href="https://github.com/mallfoundry/taroify/issues/7" target="_blank" rel="nofollow noopener noreferrer">#7</a></li>
+<li>title 提升为 ReactNode 类型 <a href="https://github.com/mallfoundry/taroify/issues/7" target="_blank" rel="nofollow noopener noreferrer">#7</a></li>
 </ul>
 </li>
 <li>
 <p>Sticky</p>
 <ul>
-<li>新增 onChange 事件<a href="https://github.com/mallfoundry/taroify/issues/6" target="_blank" rel="nofollow noopener noreferrer">#6</a></li>
+<li>新增 onChange 事件 <a href="https://github.com/mallfoundry/taroify/issues/6" target="_blank" rel="nofollow noopener noreferrer">#6</a></li>
 </ul>
 </li>
 </ul>
@@ -519,7 +569,7 @@
 <li>
 <p>Tabbar</p>
 <ul>
-<li>重命名 Tabbar.Item 为 Tabbar.TabItem<a href="https://github.com/mallfoundry/taroify/issues/8" target="_blank" rel="nofollow noopener noreferrer">#8</a></li>
+<li>重命名 Tabbar.Item 为 Tabbar.TabItem <a href="https://github.com/mallfoundry/taroify/issues/8" target="_blank" rel="nofollow noopener noreferrer">#8</a></li>
 </ul>
 </li>
 </ul>
@@ -530,16 +580,16 @@
 <li>
 <p>Button</p>
 <ul>
-<li>新增小程序属性<a href="https://github.com/mallfoundry/taroify/issues/2" target="_blank" rel="nofollow noopener noreferrer">#2</a></li>
+<li>新增小程序属性 <a href="https://github.com/mallfoundry/taroify/issues/2" target="_blank" rel="nofollow noopener noreferrer">#2</a></li>
 </ul>
 </li>
 <li>
 <p>Tabbar</p>
 <ul>
-<li>新增 fixed 属性<a href="https://github.com/mallfoundry/taroify/issues/5" target="_blank" rel="nofollow noopener noreferrer">#5</a></li>
-<li>Tabbar：新增 placeholder 属性<a href="https://github.com/mallfoundry/taroify/issues/5" target="_blank" rel="nofollow noopener noreferrer">#5</a></li>
-<li>Tabbar：新增 bordered 属性<a href="https://github.com/mallfoundry/taroify/issues/5" target="_blank" rel="nofollow noopener noreferrer">#5</a></li>
-<li>Tabbar.Item：新增 badge 属性<a href="https://github.com/mallfoundry/taroify/issues/5" target="_blank" rel="nofollow noopener noreferrer">#5</a></li>
+<li>新增 fixed 属性 <a href="https://github.com/mallfoundry/taroify/issues/5" target="_blank" rel="nofollow noopener noreferrer">#5</a></li>
+<li>Tabbar：新增 placeholder 属性 <a href="https://github.com/mallfoundry/taroify/issues/5" target="_blank" rel="nofollow noopener noreferrer">#5</a></li>
+<li>Tabbar：新增 bordered 属性 <a href="https://github.com/mallfoundry/taroify/issues/5" target="_blank" rel="nofollow noopener noreferrer">#5</a></li>
+<li>Tabbar.Item：新增 badge 属性 <a href="https://github.com/mallfoundry/taroify/issues/5" target="_blank" rel="nofollow noopener noreferrer">#5</a></li>
 </ul>
 </li>
 </ul>
@@ -549,7 +599,7 @@
 <p><code class="language-text">2021-09-03</code></p>
 <p><strong>Bug Fixes</strong></p>
 <ul>
-<li>List：修复 nextTick 在微信小程序不执行的问题<a href="https://github.com/mallfoundry/taroify/issues/3" target="_blank" rel="nofollow noopener noreferrer">#3</a></li>
+<li>List：修复 nextTick 在微信小程序不执行的问题 <a href="https://github.com/mallfoundry/taroify/issues/3" target="_blank" rel="nofollow noopener noreferrer">#3</a></li>
 </ul>
 </div><div class="vant-docs-card"><h3 id="v0012-alpha1" style="position:relative;"><a href="#v0012-alpha1" aria-label="v0012 alpha1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>v0.0.12-alpha.1</h3>
 <p><code class="language-text">2021-08-31</code></p>
