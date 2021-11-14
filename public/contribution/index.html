@@ -61,14 +61,14 @@
 <div class="vant-docs-card"><h3 id="本地开发" style="position:relative;"><a href="#%E6%9C%AC%E5%9C%B0%E5%BC%80%E5%8F%91" aria-label="本地开发 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>本地开发</h3>
 <p>按照下面的步骤操作，即可在本地开发 Taroify 组件。</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token comment"># 克隆仓库</span>
-<span class="token comment"># 默认为 master 分支，包含 Taroify 的代码</span>
-<span class="token function">git</span> clone https://gitee.com/mallfoundry/taroify.git
+<span class="token comment"># 默认为 main 分支，包含 Taroify 的代码</span>
+<span class="token function">git</span> clone https://github.com/mallfoundry/taroify.git
 
 <span class="token comment"># 安装依赖</span>
-<span class="token builtin class-name">cd</span> taroify <span class="token operator">&amp;&amp;</span> lerna bootstrap
+<span class="token builtin class-name">cd</span> taroify <span class="token operator">&amp;&amp;</span> <span class="token function">yarn</span> run install:node_modules
 
 <span class="token comment"># 进入开发模式，浏览器访问 http://localhost:8000</span>
-<span class="token function">npm</span> run dev</code></pre></div>
+<span class="token function">npm</span> run develop</code></pre></div>
 </div><div class="vant-docs-card"><h3 id="目录结构" style="position:relative;"><a href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84" aria-label="目录结构 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>目录结构</h3>
 <ul>
 <li>仓库的组件代码位于 packages/core 下，每个组件一个文件夹</li>
@@ -88,7 +88,7 @@
 └─ button
    ├─ __tests__        # 单元测试
    ├─ variables.scss   # 组件样式变量
-   ├─ button.ts        # 具名组件
+   ├─ button.tsx       # 具名组件
    ├─ button.scss      # 组件样式
    ├─ index.ts         # 组件入口
    ├─ index.scss       # 组件样式入口</code></pre></div>
@@ -102,7 +102,7 @@
 </div><div class="vant-docs-card"><h3 id="pull-request-流程" style="position:relative;"><a href="#pull-request-%E6%B5%81%E7%A8%8B" aria-label="pull request 流程 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pull Request 流程</h3>
 <ol>
 <li>fork 主仓库，如果已经 fork 过，请同步主仓库的最新代码</li>
-<li>基于 fork 后仓库的 dev 分支新建一个分支，比如<code class="language-text">feature/button_color</code></li>
+<li>基于 fork 后仓库的 main 分支新建一个分支，比如<code class="language-text">feature/button-color</code></li>
 <li>在新分支上进行开发，开发完成后，提 Pull Request 到主仓库的 dev 分支</li>
 <li>Pull Request 会在 Review 通过后被合并到主仓库</li>
 <li>等待 Taroify 发布版本，一般是每周一次</li>
@@ -116,7 +116,7 @@
 <span class="token function">git</span> fetch upstream
 
 <span class="token comment"># 切换至 dev 分支</span>
-<span class="token function">git</span> checkout master
+<span class="token function">git</span> checkout main
 
 <span class="token comment"># 合并主仓库代码</span>
-<span class="token function">git</span> merge upstream/master</code></pre></div></div></div></div><div class="vant-simulator"><iframe src="" frameBorder="0"></iframe></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/contribution/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-fd6274fd012bb408034f.js"],"app":["/app-4f8f8f0bcfd1f431d668.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4ce3191619ff3327b279.js"],"component---src-templates-document-template-tsx":["/component---src-templates-document-template-tsx-6ec0e270ad46c799b95c.js"]};/*]]>*/</script><script src="/taroify.com/polyfill-fd6274fd012bb408034f.js" nomodule=""></script><script src="/taroify.com/component---src-templates-document-template-tsx-6ec0e270ad46c799b95c.js" async=""></script><script src="/taroify.com/app-4f8f8f0bcfd1f431d668.js" async=""></script><script src="/taroify.com/framework-58998b2e9dd77d8726b4.js" async=""></script><script src="/taroify.com/webpack-runtime-65b996963f28846ef977.js" async=""></script></body></html>
+<span class="token function">git</span> merge upstream/main</code></pre></div></div></div></div><div class="vant-simulator"><iframe src="" frameBorder="0"></iframe></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/contribution/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-fd6274fd012bb408034f.js"],"app":["/app-4f8f8f0bcfd1f431d668.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4ce3191619ff3327b279.js"],"component---src-templates-document-template-tsx":["/component---src-templates-document-template-tsx-6ec0e270ad46c799b95c.js"]};/*]]>*/</script><script src="/taroify.com/polyfill-fd6274fd012bb408034f.js" nomodule=""></script><script src="/taroify.com/component---src-templates-document-template-tsx-6ec0e270ad46c799b95c.js" async=""></script><script src="/taroify.com/app-4f8f8f0bcfd1f431d668.js" async=""></script><script src="/taroify.com/framework-58998b2e9dd77d8726b4.js" async=""></script><script src="/taroify.com/webpack-runtime-65b996963f28846ef977.js" async=""></script></body></html>
