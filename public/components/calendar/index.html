@@ -386,6 +386,24 @@
 <td><code class="language-text">single</code></td>
 </tr>
 <tr>
+<td>defaultValue</td>
+<td>默认选中的日期，<code class="language-text">type</code> 为 <code class="language-text">multiple</code> 或 <code class="language-text">range</code> 时为数组，传入 <code class="language-text">null</code> 表示默认不选择</td>
+<td><em>Date | Date[] | null</em></td>
+<td>今天</td>
+</tr>
+<tr>
+<td>value</td>
+<td>选中的日期，<code class="language-text">type</code> 为 <code class="language-text">multiple</code> 或 <code class="language-text">range</code> 时为数组，传入 <code class="language-text">null</code> 表示默认不选择</td>
+<td><em>Date | Date[] | null</em></td>
+<td>今天</td>
+</tr>
+<tr>
+<td>formatter</td>
+<td>日期格式化函数</td>
+<td><em>(day: Calendar.DayObject) => Calendar.DayObject</em></td>
+<td>-</td>
+</tr>
+<tr>
 <td>title</td>
 <td>日历标题</td>
 <td><em>string</em></td>
@@ -408,18 +426,6 @@
 <td>可选择的最大日期</td>
 <td><em>Date</em></td>
 <td>当前日期的六个月后</td>
-</tr>
-<tr>
-<td>defaultValue</td>
-<td>默认选中的日期，<code class="language-text">type</code> 为 <code class="language-text">multiple</code> 或 <code class="language-text">range</code> 时为数组，传入 <code class="language-text">null</code> 表示默认不选择</td>
-<td><em>Date | Date[] | null</em></td>
-<td>今天</td>
-</tr>
-<tr>
-<td>formatter</td>
-<td>日期格式化函数</td>
-<td><em>(day: Calendar.DayObject) => Calendar.DayObject</em></td>
-<td>-</td>
 </tr>
 <tr>
 <td>readonly</td>

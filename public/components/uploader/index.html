@@ -245,9 +245,15 @@
 </thead>
 <tbody>
 <tr>
+<td>defaultValue</td>
+<td>默认已上传的文件列表</td>
+<td><em>UploadFile[]</em></td>
+<td>-</td>
+</tr>
+<tr>
 <td>value</td>
 <td>已上传的文件列表</td>
-<td><em>FileListItem[]</em></td>
+<td><em>UploadFile[]</em></td>
 <td>-</td>
 </tr>
 <tr>
@@ -301,12 +307,7 @@
 <tr>
 <td>onUpload</td>
 <td>点击上传区域时触发</td>
-<td><em>event: MouseEvent</em></td>
-</tr>
-<tr>
-<td>onRemove</td>
-<td>删除文件预览时触发</td>
-<td>-</td>
+<td><em>event: ITouchEvent</em></td>
 </tr>
 <tr>
 <td>onChange</td>
