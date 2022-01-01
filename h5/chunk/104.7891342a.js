@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[104],{"136":function(t,n,e){"use strict";e.r(n),e.d(n,"taro_label_core",(function(){return c}));var o=e(32),c=function(){function r(t){Object(o.g)(this,t)}return r.prototype.render=function(){return Object(o.e)("label",{"htmlFor":this.for},Object(o.e)("slot",null))},r}()}}]);
+//# sourceMappingURL=104.7891342a.js.map
