@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[107],{"140":function(n,o,e){"use strict";e.r(o),e.d(o,"taro_open_data_core",(function(){return c}));var r=e(32),c=function(){function t(n){Object(r.g)(this,n)}return t.prototype.componentDidLoad=function(){console.error("H5 暂不支持 OpenData 组件！")},t.prototype.render=function(){return Object(r.e)(r.a,null)},t}()}}]);
-//# sourceMappingURL=107.2c6f6e06.js.map
