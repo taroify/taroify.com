@@ -25,6 +25,7 @@ node_modules/
 /site/public/
 /packages/*/dist
 /packages/*/build
+/problems/*/dist
 
 #gatsby
 .content/
@@ -53,3 +54,7 @@ yarn.lock
 *.iws
 *.iml
 *.ipr
+
+# vscode
+.history
+.vscode
