@@ -222,13 +222,13 @@
 <tr>
 <td>loading</td>
 <td>是否处于加载状态，加载过程中不触发 <code class="language-text">onLoad</code> 事件</td>
-<td><em>boolean</em></td>
+<td><em>boolean | ()=> boolean</em></td>
 <td><code class="language-text">false</code></td>
 </tr>
 <tr>
 <td>hasMore</td>
 <td>是否已加载完成，加载完成后不再触发 <code class="language-text">onLoad</code> 事件</td>
-<td><em>boolean</em></td>
+<td><em>boolean | ()=> boolean</em></td>
 <td><code class="language-text">false</code></td>
 </tr>
 <tr>
