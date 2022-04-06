@@ -82,10 +82,12 @@
 <p>将 <code class="language-text">mask</code> 设置为 <code class="language-text">false</code> 可以明文展示输入的内容，适用于短信验证码等场景。</p>
 <div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">PasswordInput</span></span> <span class="token attr-name">mask</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">false</span><span class="token punctuation">}</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>123<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre></div>
 </div><div class="taroify-docs-card"><h3 id="提示信息" style="position:relative;"><a href="#%E6%8F%90%E7%A4%BA%E4%BF%A1%E6%81%AF" aria-label="提示信息 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>提示信息</h3>
-<p>通过 <code class="language-text">info</code> 属性设置提示信息，通过 <code class="language-text">error</code> 属性设置错误提示，例如当输入六位时提示密码错误。</p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">PasswordInput</span></span> <span class="token attr-name">info</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>密码为 6 位数字<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>123<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre></div>
+<p>通过 <code class="language-text">feedback</code> 属性设置提示信息，例如当输入六位时提示密码错误。</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">PasswordInput</span></span> <span class="token attr-name">feedback</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>密码为 6 位数字<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>123<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">PasswordInput</span></span> <span class="token attr-name">feedback</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> color<span class="token operator">:</span> <span class="token string">"danger"</span><span class="token punctuation">,</span> children<span class="token operator">:</span> <span class="token string">"密码为 6 位数字"</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>123<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">PasswordInput</span></span> <span class="token attr-name">feedback</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">PasswordInput.Feedback</span></span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>danger<span class="token punctuation">"</span></span> <span class="token attr-name">children</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>密码为 6 位数字<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">}</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>123<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre></div>
 </div><h2 id="api" style="position:relative;"><a href="#api" aria-label="api permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API</h2>
-<div class="taroify-docs-card"><h3 id="props" style="position:relative;"><a href="#props" aria-label="props permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Props</h3>
+<div class="taroify-docs-card"><h3 id="passwordinput-props" style="position:relative;"><a href="#passwordinput-props" aria-label="passwordinput props permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PasswordInput Props</h3>
 <table>
 <thead>
 <tr>
@@ -127,20 +129,14 @@
 <td><code class="language-text">false</code></td>
 </tr>
 <tr>
-<td>info</td>
+<td>feedback</td>
 <td>输入框下方文字提示</td>
-<td><em>string</em></td>
-<td>-</td>
-</tr>
-<tr>
-<td>error</td>
-<td>输入框下方错误提示</td>
-<td><em>boolean</em></td>
+<td><em>ReactText | PasswordInputFeedbackProps | ReactElement</em></td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
-</div><div class="taroify-docs-card"><h3 id="events" style="position:relative;"><a href="#events" aria-label="events permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Events</h3>
+</div><div class="taroify-docs-card"><h3 id="passwordinput-events" style="position:relative;"><a href="#passwordinput-events" aria-label="passwordinput events permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PasswordInput Events</h3>
 <table>
 <thead>
 <tr>
@@ -153,6 +149,144 @@
 <tr>
 <td>onFocus</td>
 <td>输入框聚焦时触发</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div><div class="taroify-docs-card"><h3 id="passwordinputfeedback-props" style="position:relative;"><a href="#passwordinputfeedback-props" aria-label="passwordinputfeedback props permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PasswordInput.Feedback Props</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>颜色，可选值为 <code class="language-text">primary</code> <code class="language-text">info</code> <code class="language-text">success</code>  <code class="language-text">warning</code>  <code class="language-text">danger</code></td>
+<td><em>string</em></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div><h2 id="主题定制" style="position:relative;"><a href="#%E4%B8%BB%E9%A2%98%E5%AE%9A%E5%88%B6" aria-label="主题定制 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>主题定制</h2>
+<div class="taroify-docs-card"><h3 id="样式变量" style="position:relative;"><a href="#%E6%A0%B7%E5%BC%8F%E5%8F%98%E9%87%8F" aria-label="样式变量 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>样式变量</h3>
+<p>组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 <a href="/taroify.com/components/config-provider/">ConfigProvider</a> 组件。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>password-input-height</td>
+<td><em>50px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-margin</td>
+<td><em>0 var(—padding-md)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-border-radius</td>
+<td><em>6px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-item-font-size</td>
+<td><em>20px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-item-background-color</td>
+<td><em>var(—white)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-mask-size</td>
+<td><em>10px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-mask-width</td>
+<td><em>var(—password-input-mask-size)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-mask-height</td>
+<td><em>var(—password-input-mask-size)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-mask-color</td>
+<td><em>var(—black)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-cursor-color</td>
+<td><em>var(—text-color)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-cursor-width</td>
+<td><em>1px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-cursor-height</td>
+<td><em>40%</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-cursor-animation-duration</td>
+<td><em>1s</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-feedback-margin-top</td>
+<td><em>var(—padding-md)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-feedback-font-size</td>
+<td><em>var(—font-size-md)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-feedback-color</td>
+<td><em>var(—gray-6)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-feedback-primary-color</td>
+<td><em>var(—primary-color)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-feedback-info-color</td>
+<td><em>var(—info-color)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-feedback-success-color</td>
+<td><em>var(—success-color)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-feedback-warning-color</td>
+<td><em>var(—warning-color)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>password-input-feedback-danger-color</td>
+<td><em>var(—danger-color)</em></td>
 <td>-</td>
 </tr>
 </tbody>
