@@ -138,8 +138,8 @@
   <span class="token punctuation">)</span>
 <span class="token punctuation">}</span></code></pre></div>
 </div><div class="taroify-docs-card"><h3 id="圆角按钮风格" style="position:relative;"><a href="#%E5%9C%86%E8%A7%92%E6%8C%89%E9%92%AE%E9%A3%8E%E6%A0%BC" aria-label="圆角按钮风格 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>圆角按钮风格</h3>
-<p>将 actions.theme 选项设置为 <code class="language-text">round</code> 可以展示圆角按钮风格的弹窗。</p>
-<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">function</span> <span class="token function">RoundDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<p>将 actions.variant 选项设置为 <code class="language-text">rounded</code> 可以展示圆角按钮风格的弹窗。</p>
+<div class="gatsby-highlight" data-language="tsx"><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">function</span> <span class="token function">RoundedDialog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">const</span> <span class="token punctuation">[</span>open<span class="token punctuation">,</span> setOpen<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span></span><span class="token punctuation">></span></span><span class="token plain-text">
@@ -153,7 +153,7 @@
       </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Dialog</span></span> <span class="token attr-name">open</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>open<span class="token punctuation">}</span></span> <span class="token attr-name">onClose</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>setOpen<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Dialog.Header</span></span><span class="token punctuation">></span></span><span class="token plain-text">标题</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Dialog.Header</span></span><span class="token punctuation">></span></span><span class="token plain-text">
         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Dialog.Content</span></span><span class="token punctuation">></span></span><span class="token plain-text">代码是写出来给人看的，附带能在机器上运行</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Dialog.Content</span></span><span class="token punctuation">></span></span><span class="token plain-text">
-        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Dialog.Actions</span></span> <span class="token attr-name">theme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>round<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Dialog.Actions</span></span> <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">setOpen</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">取消</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Button</span></span><span class="token punctuation">></span></span><span class="token plain-text">
           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">setOpen</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">确认</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Button</span></span><span class="token punctuation">></span></span><span class="token plain-text">
         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Dialog.Actions</span></span><span class="token punctuation">></span></span><span class="token plain-text">
@@ -249,8 +249,8 @@
 </thead>
 <tbody>
 <tr>
-<td>theme</td>
-<td>样式风格，可选值为 <code class="language-text">round</code></td>
+<td>variant</td>
+<td>样式风格，可选值为 <code class="language-text">rounded</code></td>
 <td><em>string</em></td>
 <td><code class="language-text">default</code></td>
 </tr>
@@ -363,6 +363,145 @@
 <td><em>options | message</em></td>
 <td>-</td>
 <td>展示消息确认弹窗</td>
+</tr>
+</tbody>
+</table>
+</div><h2 id="主题定制" style="position:relative;"><a href="#%E4%B8%BB%E9%A2%98%E5%AE%9A%E5%88%B6" aria-label="主题定制 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>主题定制</h2>
+<div class="taroify-docs-card"><h3 id="样式变量" style="position:relative;"><a href="#%E6%A0%B7%E5%BC%8F%E5%8F%98%E9%87%8F" aria-label="样式变量 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>样式变量</h3>
+<p>组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 <a href="/taroify.com/components/config-provider/">ConfigProvider</a> 组件。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—dialog-width</td>
+<td><em>320px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-small-screen-width</td>
+<td><em>90%</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-font-size</td>
+<td><em>var(—font-size-lg)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-transition</td>
+<td><em>var(—animation-duration-base)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-border-radius</td>
+<td><em>16px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-background-color</td>
+<td><em>var(—white)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-header-font-weight</td>
+<td><em>var(—font-weight-bold)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-header-line-height</td>
+<td><em>24px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-header-padding-top</td>
+<td><em>26px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-header-isolated-padding</td>
+<td><em>var(—padding-lg) 0</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-message-padding</td>
+<td><em>26px * $hd var(—padding-lg)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-message-font-size</td>
+<td><em>var(—font-size-md)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-message-line-height</td>
+<td><em>var(—line-height-md)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-message-max-height</td>
+<td><em>60vh</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-has-title-message-color</td>
+<td><em>var(—gray-7)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-has-title-message-padding-top</td>
+<td><em>var(—padding-xs)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-button-height</td>
+<td><em>48px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-confirm-button-color</td>
+<td><em>var(—red)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-footer-rounded-padding</td>
+<td><em>var(—padding-xs) var(—padding-lg) var(—padding-md)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-rounded-button-active-color</td>
+<td><em>var(—white)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-rounded-button-font-size</td>
+<td><em>var(—font-size-md)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-rounded-button-height</td>
+<td><em>36px * $hd</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-rounded-button-border-radius</td>
+<td><em>var(—border-radius-max)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-rounded-confirm-button-background-color</td>
+<td><em>var(—gradient-red)</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td>—dialog-rounded-cancel-button-background-color</td>
+<td><em>var(—gradient-orange)</em></td>
+<td>-</td>
 </tr>
 </tbody>
 </table></div></div></div><div class="taroify-simulator"><iframe title="simulator" src="" frameBorder="0"></iframe></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
