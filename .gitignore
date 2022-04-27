@@ -1,0 +1,60 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.yarn
+.pnp.js
+node_modules/
+/packages/*/node_modules
+/packages/*/package-lock.json
+
+# testing
+/coverage
+
+# eslint
+.eslintcache
+
+# bundles
+/bundles
+
+# production
+/build
+/dist
+.cache/
+/site/public/
+/packages/*/dist
+/packages/*/build
+/problems/*/dist
+
+#gatsby
+.content/
+
+# temp
+.temp/
+.rn_temp/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+lerna-error.log*
+yarn.lock
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+# vscode
+.history
+.vscode
