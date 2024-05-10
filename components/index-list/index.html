@@ -175,7 +175,50 @@
 
 
 
-<table><thead><tr><th>参数</th><th>说明</th><th>类型</th><th>默认值</th></tr></thead><tbody><tr><td>sticky</td><td>是否开启锚点自动吸顶</td><td><em>boolean</em></td><td><code class="language-text">true</code></td></tr><tr><td>stickyOffsetTop</td><td>锚点自动吸顶时与顶部的距离</td><td><em>number | string</em></td><td><code class="language-text">0</code></td></tr><tr><td>inner</td><td>是否是底部弹窗内使用</td><td><em>boolean</em></td><td><code class="language-text">false</code></td></tr><tr><td>delay</td><td>inner 为 <code class="language-text">true</code>，并且自定义了弹窗弹出动画时长时设置</td><td><em>number</em></td><td>inner 为 true 时候是 <code class="language-text">300</code>，false 时候是 <code class="language-text">0</code></td></tr></tbody></table>
+
+
+
+
+
+
+<table><thead><tr><th>参数</th><th>说明</th><th>类 型</th><th>默认值</th></tr></thead><tbody><tr><td>sticky</td><td>是否开启锚点自动吸顶</td><td><em>boolean</em></td><td><code class="language-text">true</code></td></tr><tr><td>stickyOffsetTop</td><td>锚点自动吸顶时与顶部的距离</td><td><em>number | string</em></td><td><code class="language-text">0</code></td></tr><tr><td>inner</td><td>是否是底部弹窗内使用</td><td><em>boolean</em></td><td><code class="language-text">false</code></td></tr><tr><td>delay</td><td>inner 为 <code class="language-text">true</code>，并且自定义了弹窗弹出动画时长时设置</td><td><em>number</em></td><td>inner 为 true 时候是 <code class="language-text">300</code>，false 时候是 <code class="language-text">0</code></td></tr><tr><td>showSidebar</td><td>是否显示索引</td><td><em>boolean</em></td><td><code class="language-text">true</code></td></tr></tbody></table>
+</div><div class="taroify-docs-card"><h3 id="indexlist-events" style="position:relative"><a aria-label="indexlist events permalink" class="anchor before" href="/taroify.com/components/index-list/#indexlist-events"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IndexList Events</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>事件名</th><th>说明</th><th>回调参数</th></tr></thead><tbody><tr><td>onChange</td><td>索引位变化时触发</td><td><em>current: number, anchor: number | string</em></td></tr></tbody></table>
+</div><div class="taroify-docs-card"><h3 id="indexlist-method" style="position:relative"><a aria-label="indexlist method permalink" class="anchor before" href="/taroify.com/components/index-list/#indexlist-method"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IndexList Method</h3>
+<p>通过 <code class="language-text">ref</code> 可以获取到 IndexList 实例并调用实例方法</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th style="text-align:left">方法名</th><th>说明</th><th>参数</th><th>返回值</th></tr></thead><tbody><tr><td style="text-align:left">scrollTo</td><td>跳转指定位置</td><td>index</td><td>-</td></tr></tbody></table>
 </div><div class="taroify-docs-card"><h3 id="indexlistanchor-props" style="position:relative"><a aria-label="indexlistanchor props permalink" class="anchor before" href="/taroify.com/components/index-list/#indexlistanchor-props"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IndexList.Anchor Props</h3>
 
 
@@ -201,7 +244,7 @@
 
 
 <table><thead><tr><th>参数</th><th>说明</th><th>类型</th><th>默认值</th></tr></thead><tbody><tr><td>index</td><td>索引字符</td><td><em>number | string</em></td><td>-</td></tr><tr><td>children</td><td>索引内容</td><td><em>ReactNode</em></td><td>-</td></tr></tbody></table>
-</div><div class="taroify-docs-card"><h3 id="indexlist-events" style="position:relative"><a aria-label="indexlist events permalink" class="anchor before" href="/taroify.com/components/index-list/#indexlist-events"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IndexList Events</h3>
+</div><div class="taroify-docs-card"><h3 id="indexlist-events-1" style="position:relative"><a aria-label="indexlist events 1 permalink" class="anchor before" href="/taroify.com/components/index-list/#indexlist-events-1"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IndexList Events</h3>
 
 
 
@@ -318,4 +361,4 @@
                       var s = document.getElementsByTagName("script")[0]; 
                       s.parentNode.insertBefore(hm, s);
                   })();
-              </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/components/index-list/";window.___webpackCompilationHash="769933a118800a3deba2";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-bbedbee9b99bdf87cd92.js"],"app":["/app-cc02c160560e06c75ff9.js"],"component---src-pages-404-js":["/component---src-pages-404-js-899b38adcd4dfa2c4acc.js"],"component---src-templates-document-template-tsx":["/component---src-templates-document-template-tsx-9a181bd690211998769e.js"]};/*]]>*/</script><script src="/taroify.com/polyfill-bbedbee9b99bdf87cd92.js" nomodule=""></script><script src="/taroify.com/app-cc02c160560e06c75ff9.js" async=""></script><script src="/taroify.com/framework-86283002c09bc6911fcf.js" async=""></script><script src="/taroify.com/webpack-runtime-705423154e218179ad4a.js" async=""></script></body></html>
+              </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/components/index-list/";window.___webpackCompilationHash="55dddd4d04ea92b9c94d";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-bbedbee9b99bdf87cd92.js"],"app":["/app-cc02c160560e06c75ff9.js"],"component---src-pages-404-js":["/component---src-pages-404-js-899b38adcd4dfa2c4acc.js"],"component---src-templates-document-template-tsx":["/component---src-templates-document-template-tsx-9a181bd690211998769e.js"]};/*]]>*/</script><script src="/taroify.com/polyfill-bbedbee9b99bdf87cd92.js" nomodule=""></script><script src="/taroify.com/app-cc02c160560e06c75ff9.js" async=""></script><script src="/taroify.com/framework-86283002c09bc6911fcf.js" async=""></script><script src="/taroify.com/webpack-runtime-ec5328bff961d566ba6c.js" async=""></script></body></html>
