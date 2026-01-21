@@ -115,6 +115,42 @@ module<span class="token punctuation">.</span>exports <span class="token operato
     <span class="token punctuation">]</span><span class="token punctuation">,</span>
   <span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>Vite 版本</p>
+<div class="gatsby-highlight" data-language="js"><div class="code-copy-btn"></div><pre class="language-js"><code class="language-js"><span class="token comment">// config/index.ts</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStyleImportPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vite-plugin-style-import&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> defineConfig<span class="token operator">&lt;</span><span class="token string">&quot;vite&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">merge<span class="token punctuation">,</span> <span class="token punctuation">{</span> command<span class="token punctuation">,</span> mode <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token literal-property property">baseConfig</span><span class="token operator">:</span> UserConfigExport<span class="token operator">&lt;</span><span class="token string">&quot;vite&quot;</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">compiler</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;vite&quot;</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">vitePlugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token function">createStyleImportPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token literal-property property">libs</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token literal-property property">libraryName</span><span class="token operator">:</span> <span class="token string">&quot;@taroify/core&quot;</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">esModule</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">resolveStyle</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">name</span><span class="token operator">:</span> string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">@taroify/core/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/index.css</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              <span class="token literal-property property">libraryName</span><span class="token operator">:</span> <span class="token string">&quot;@taroify/icons&quot;</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">esModule</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              <span class="token function-variable function">resolveStyle</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token string">&quot;@taroify/icons/style&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+
+  process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">BROWSERSLIST_ENV</span> <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">&quot;development&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 本地开发构建配置（不混淆压缩）</span>
+    <span class="token keyword">return</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> baseConfig<span class="token punctuation">,</span> devConfig<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 生产构建配置（默认开启压缩混淆等）</span>
+  <span class="token keyword">return</span> <span class="token function">merge</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> baseConfig<span class="token punctuation">,</span> prodConfig<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
 <p>接着你可以在代码中直接引入 Taroify 组件：</p>
 <div class="gatsby-highlight" data-language="tsx"><div class="code-copy-btn"></div><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// 插件会自动将代码转化为方式二中的按需引入形式</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@taroify/core&quot;</span></code></pre></div>
@@ -126,10 +162,10 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <span class="token keyword">import</span> <span class="token string">&quot;@taroify/core/button/index.css&quot;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@taroify/core&quot;</span></code></pre></div>
 </div><div class="taroify-docs-card"><h3 id="" style="position:relative"><a aria-label=" permalink" class="anchor before" href="/taroify.com/quickstart/#"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a></h3>
-<p>在使用上面两种CSS方式引入时，若要使用<a href="/taroify.com/components/style">Style 内置样式</a>, 需要单独引入(版本 &gt; 0.8.1 才产出次文件，之前未产出，低版 本无法通过CSS方式引入)</p>
+<p>在使用上面两种CSS方式引入时，若要使用<a href="/taroify.com/components/style">Style 内置样式</a>, 需要单独引入(版本 &gt; 0.8.1 才产出次文件，之前未产出，低版本无法通过CSS方式引入)</p>
 <div class="gatsby-highlight" data-language="tsx"><div class="code-copy-btn"></div><pre class="language-tsx"><code class="language-tsx"><span class="token keyword">import</span> <span class="token string">&quot;@taroify/core/styles/index.css&quot;</span></code></pre></div>
 </div><div class="taroify-docs-card"><h3 id="方式三-导入所有组件样式" style="position:relative"><a aria-label="方式三 导入所有组件样式 permalink" class="anchor before" href="/taroify.com/quickstart/#%E6%96%B9%E5%BC%8F%E4%B8%89-%E5%AF%BC%E5%85%A5%E6%89%80%E6%9C%89%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>方式三. 导入所有组件样式</h3>
-<p>Taroify 支持一次性导入所有组件，引入所有组件会增加代码包体积，因此不推荐这种做法。</p>
+<p>Taroify 支持一次性导入所有组件，引入所有组件会增加代码包体积，因此不 推荐这种做法。</p>
 <div class="gatsby-highlight" data-language="tsx"><div class="code-copy-btn"></div><pre class="language-tsx"><code class="language-tsx"><span class="token comment">// app.ts</span>
 <span class="token keyword">import</span> <span class="token string">&quot;@taroify/icons/index.scss&quot;</span>
 <span class="token keyword">import</span> <span class="token string">&quot;@taroify/core/index.scss&quot;</span>
