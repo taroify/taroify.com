@@ -1,0 +1,97 @@
+# Taroify
+
+> 轻量、可靠的小程序端 Taro React UI 组件库
+
+## 指南
+
+- [介绍](https://taroify.com/introduce/index.md): 了解 Taroify 的设计目标、核心特性、生态与社区。
+- [快速上手](https://taroify.com/quickstart/index.md): 安装 Taroify，并在 Taro 项目中按需引入组件和样式。
+- [开发指南](https://taroify.com/contribution/index.md): 在本地开发、调试、测试并参与 Taroify 项目贡献。
+- [更新日志](https://taroify.com/changelog/index.md): 查看 Taroify 各版本的新特性、问题修复与变更记录。
+
+## 组件
+
+- [Button 按钮](https://taroify.com/components/button/index.md): Taroify Button 按钮组件文档，包含代码演示、API 和主题定制说明。
+- [Cell 单元格](https://taroify.com/components/cell/index.md): Taroify Cell 单元格组件文档，包含代码演示、API 和主题定制说明。
+- [ConfigProvider 全局配置](https://taroify.com/components/config-provider/index.md): Taroify ConfigProvider 全局配置组件文档，包含代码演示、API 和主题定制说明。
+- [Icon 图标](https://taroify.com/components/icon/index.md): Taroify Icon 图标组件文档，包含代码演示、API 和主题定制说明。
+- [Image 图片](https://taroify.com/components/image/index.md): Taroify Image 图片组件文档，包含代码演示、API 和主题定制说明。
+- [Flex 布局](https://taroify.com/components/flex/index.md): Taroify Flex 布局组件文档，包含代码演示、API 和主题定制说明。
+- [Popup 弹出层](https://taroify.com/components/popup/index.md): Taroify Popup 弹出层组件文档，包含代码演示、API 和主题定制说明。
+- [Style 内置样式](https://taroify.com/components/style/index.md): Taroify Style 内置样式组件文档，包含代码演示、API 和主题定制说明。
+- [Toast 轻提示](https://taroify.com/components/toast/index.md): Taroify Toast 轻提示组件文档，包含代码演示、API 和主题定制说明。
+- [Space 间距](https://taroify.com/components/space/index.md): Taroify Space 间距组件文档，包含代码演示、API 和主题定制说明。
+- [SafeArea 安全区域](https://taroify.com/components/safe-area/index.md): Taroify SafeArea 安全区域组件文档，包含代码演示、API 和主题定制说明。
+- [FixedView 固定视图](https://taroify.com/components/fixed-view/index.md): Taroify FixedView 固定视图组件文档，包含代码演示、API 和主题定制说明。
+- [Cascader 级联选择](https://taroify.com/components/cascader/index.md): Taroify Cascader 级联选择组件文档，包含代码演示、API 和主题定制说明。
+- [Calendar 日历](https://taroify.com/components/calendar/index.md): Taroify Calendar 日历组件文档，包含代码演示、API 和主题定制说明。
+- [Checkbox 复选框](https://taroify.com/components/checkbox/index.md): Taroify Checkbox 复选框组件文档，包含代码演示、API 和主题定制说明。
+- [Field 输入框](https://taroify.com/components/field/index.md): Taroify Field 输入框组件文档，包含代码演示、API 和主题定制说明。
+- [Form 表单](https://taroify.com/components/form/index.md): Taroify Form 表单组件文档，包含代码演示、API 和主题定制说明。
+- [DatetimePicker 时间选择](https://taroify.com/components/datetime-picker/index.md): Taroify DatetimePicker 时间选择组件文档，包含代码演示、API 和主题定制说明。
+- [NumberKeyboard 数字键盘](https://taroify.com/components/number-keyboard/index.md): Taroify NumberKeyboard 数字键盘组件文档，包含代码演示、API 和主题定制说明。
+- [PasswordInput 密码输入框](https://taroify.com/components/password-input/index.md): Taroify PasswordInput 密码输入框组件文档，包含代码演示、API 和主题定制说明。
+- [Picker 选择器](https://taroify.com/components/picker/index.md): Taroify Picker 选择器组件文档，包含代码演示、API 和主题定制说明。
+- [AreaPicker 省市区选择器](https://taroify.com/components/area-picker/index.md): Taroify AreaPicker 省市区选择器组件文档，包含代码演示、API 和主题定制说明。
+- [Radio 单选框](https://taroify.com/components/radio/index.md): Taroify Radio 单选框组件文档，包含代码演示、API 和主题定制说明。
+- [Rate 评分](https://taroify.com/components/rate/index.md): Taroify Rate 评分组件文档，包含代码演示、API 和主题定制说明。
+- [Search 搜索](https://taroify.com/components/search/index.md): Taroify Search 搜索组件文档，包含代码演示、API 和主题定制说明。
+- [Slider 滑块](https://taroify.com/components/slider/index.md): Taroify Slider 滑块组件文档，包含代码演示、API 和主题定制说明。
+- [Signature 签名](https://taroify.com/components/signature/index.md): Taroify Signature 签名组件文档，包含代码演示、API 和主题定制说明。
+- [Stepper 步进器](https://taroify.com/components/stepper/index.md): Taroify Stepper 步进器组件文档，包含代码演示、API 和主题定制说明。
+- [Switch 开关](https://taroify.com/components/switch/index.md): Taroify Switch 开关组件文档，包含代码演示、API 和主题定制说明。
+- [Uploader 文件上传](https://taroify.com/components/uploader/index.md): Taroify Uploader 文件上传组件文档，包含代码演示、API 和主题定制说明。
+- [ActionSheet 动作面板](https://taroify.com/components/action-sheet/index.md): Taroify ActionSheet 动作面板组件文档，包含代码演示、API 和主题定制说明。
+- [Dialog 弹出框](https://taroify.com/components/dialog/index.md): Taroify Dialog 弹出框组件文档，包含代码演示、API 和主题定制说明。
+- [DropdownMenu 下拉菜单](https://taroify.com/components/dropdown-menu/index.md): Taroify DropdownMenu 下拉菜单组件文档，包含代码演示、API 和主题定制说明。
+- [FloatingPanel 浮动面板](https://taroify.com/components/floating-panel/index.md): Taroify FloatingPanel 浮动面板组件文档，包含代码演示、API 和主题定制说明。
+- [FloatingBubble 浮动气泡](https://taroify.com/components/floating-bubble/index.md): Taroify FloatingBubble 浮动气泡组件文档，包含代码演示、API 和主题定制说明。
+- [Tour 引导](https://taroify.com/components/tour/index.md): Taroify Tour 引导组件文档，包含代码演示、API 和主题定制说明。
+- [Loading 加载](https://taroify.com/components/loading/index.md): Taroify Loading 加载组件文档，包含代码演示、API 和主题定制说明。
+- [Notify 消息提示](https://taroify.com/components/notify/index.md): Taroify Notify 消息提示组件文档，包含代码演示、API 和主题定制说明。
+- [Backdrop 背景暗化](https://taroify.com/components/backdrop/index.md): Taroify Backdrop 背景暗化组件文档，包含代码演示、API 和主题定制说明。
+- [PullRefresh 下拉刷新](https://taroify.com/components/pull-refresh/index.md): Taroify PullRefresh 下拉刷新组件文档，包含代码演示、API 和主题定制说明。
+- [ShareSheet 分享面板](https://taroify.com/components/share-sheet/index.md): Taroify ShareSheet 分享面板组件文档，包含代码演示、API 和主题定制说明。
+- [SwipeCell 滑动单元格](https://taroify.com/components/swipe-cell/index.md): Taroify SwipeCell 滑动单元格组件文档，包含代码演示、API 和主题定制说明。
+- [Avatar 头像](https://taroify.com/components/avatar/index.md): Taroify Avatar 头像组件文档，包含代码演示、API 和主题定制说明。
+- [Badge 徽标](https://taroify.com/components/badge/index.md): Taroify Badge 徽标组件文档，包含代码演示、API 和主题定制说明。
+- [Circle 环形进度条](https://taroify.com/components/circle/index.md): Taroify Circle 环形进度条组件文档，包含代码演示、API 和主题定制说明。
+- [Collapse 折叠面板](https://taroify.com/components/collapse/index.md): Taroify Collapse 折叠面板组件文档，包含代码演示、API 和主题定制说明。
+- [Countdown 倒计时](https://taroify.com/components/countdown/index.md): Taroify Countdown 倒计时组件文档，包含代码演示、API 和主题定制说明。
+- [Divider 分割线](https://taroify.com/components/divider/index.md): Taroify Divider 分割线组件文档，包含代码演示、API 和主题定制说明。
+- [Empty 空状态](https://taroify.com/components/empty/index.md): Taroify Empty 空状态组件文档，包含代码演示、API 和主题定制说明。
+- [NoticeBar 通知栏](https://taroify.com/components/notice-bar/index.md): Taroify NoticeBar 通知栏组件文档，包含代码演示、API 和主题定制说明。
+- [List 列表](https://taroify.com/components/list/index.md): Taroify List 列表组件文档，包含代码演示、API 和主题定制说明。
+- [Progress 进度条](https://taroify.com/components/progress/index.md): Taroify Progress 进度条组件文档，包含代码演示、API 和主题定制说明。
+- [RollingText 翻滚文本动效](https://taroify.com/components/rolling-text/index.md): Taroify RollingText 翻滚文本动效组件文档，包含代码演示、API 和主题定制说明。
+- [Skeleton 骨架屏](https://taroify.com/components/skeleton/index.md): Taroify Skeleton 骨架屏组件文档，包含代码演示、API 和主题定制说明。
+- [Steps 步骤条](https://taroify.com/components/steps/index.md): Taroify Steps 步骤条组件文档，包含代码演示、API 和主题定制说明。
+- [Sticky 粘性布局](https://taroify.com/components/sticky/index.md): Taroify Sticky 粘性布局组件文档，包含代码演示、API 和主题定制说明。
+- [Swiper 轮播](https://taroify.com/components/swiper/index.md): Taroify Swiper 轮播组件文档，包含代码演示、API 和主题定制说明。
+- [Tag 标签](https://taroify.com/components/tag/index.md): Taroify Tag 标签组件文档，包含代码演示、API 和主题定制说明。
+- [TextEllipsis 文本省略](https://taroify.com/components/text-ellipsis/index.md): Taroify TextEllipsis 文本省略组件文档，包含代码演示、API 和主题定制说明。
+- [Timeline 时间轴](https://taroify.com/components/timeline/index.md): Taroify Timeline 时间轴组件文档，包含代码演示、API 和主题定制说明。
+- [Watermark 水印](https://taroify.com/components/watermark/index.md): Taroify Watermark 水印组件文档，包含代码演示、API 和主题定制说明。
+- [Grid 宫格](https://taroify.com/components/grid/index.md): Taroify Grid 宫格组件文档，包含代码演示、API 和主题定制说明。
+- [IndexList 索引栏](https://taroify.com/components/index-list/index.md): Taroify IndexList 索引栏组件文档，包含代码演示、API 和主题定制说明。
+- [Navbar 导航栏](https://taroify.com/components/navbar/index.md): Taroify Navbar 导航栏组件文档，包含代码演示、API 和主题定制说明。
+- [Pagination 分页](https://taroify.com/components/pagination/index.md): Taroify Pagination 分页组件文档，包含代码演示、API 和主题定制说明。
+- [Sidebar 侧边导航](https://taroify.com/components/sidebar/index.md): Taroify Sidebar 侧边导航组件文档，包含代码演示、API 和主题定制说明。
+- [Tabs 标签页](https://taroify.com/components/tabs/index.md): Taroify Tabs 标签页组件文档，包含代码演示、API 和主题定制说明。
+- [Tabbar 标签栏](https://taroify.com/components/tabbar/index.md): Taroify Tabbar 标签栏组件文档，包含代码演示、API 和主题定制说明。
+- [TreeSelect 分类选择](https://taroify.com/components/tree-select/index.md): Taroify TreeSelect 分类选择组件文档，包含代码演示、API 和主题定制说明。
+- [BackTop 回到顶部](https://taroify.com/components/back-top/index.md): Taroify BackTop 回到顶部组件文档，包含代码演示、API 和主题定制说明。
+- [FixedNav 悬浮导航](https://taroify.com/components/fixed-nav/index.md): Taroify FixedNav 悬浮导航组件文档，包含代码演示、API 和主题定制说明。
+- [ActionBar 动作栏](https://taroify.com/components/action-bar/index.md): Taroify ActionBar 动作栏组件文档，包含代码演示、API 和主题定制说明。
+
+## Hooks
+
+- [Hooks](https://taroify.com/hooks/index.md): 了解 @taroify/hooks 提供的通用 React Hooks。
+- [useCascader](https://taroify.com/hooks/use-cascader/index.md): Taroify useCascader Hook 的用法、参数与类型定义。
+
+## AI
+
+- [For Agents](https://taroify.com/agents/index.md): 让 AI Agent 通过 Skill、CLI、MCP 和 LLMs.txt 准确使用 Taroify。
+- [LLMs.txt](https://taroify.com/llms/index.md): 通过 LLMs.txt 和单页 Markdown 为 AI 工具提供 Taroify 官网文档。
+- [Taroify CLI](https://taroify.com/cli/index.md): Taroify 离线组件知识 CLI 的安装、命令、Agent Skill 与 MCP 使用指南
+- [MCP](https://taroify.com/mcp/index.md): 通过 Taroify MCP 为 AI 工具提供只读组件知识、资源与提示词。
